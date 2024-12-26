@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build Image
-        run: docker image build -t docker.io/ramiibrahim2002/simplewebdev -f Dockerfile.dev .
+        run: docker image build -t docker.io/ramiibrahim2002/simplewebprod -f Dockerfile.dev .
 
       - name: Push Image
-        run: docker image push docker.io/ramiibrahim2002/simplewebdev
+        run: docker image push docker.io/ramiibrahim2002/simplewebprod
