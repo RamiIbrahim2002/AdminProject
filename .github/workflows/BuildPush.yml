@@ -23,4 +23,4 @@ jobs:
         run: docker image build -t docker.io/ramiibrahim2002/simplewebdev -f Dockerfile.dev .
 
       - name: Push Image
-        run: docker image push docker.io/RamiIbrahim2002/simplewebdev
+        run: docker image push docker.io/ramiibrahim2002/simplewebdev
