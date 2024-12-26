@@ -1,20 +1,21 @@
 name: Shell Commands
-#workflow name
-#on: One or array of events
-on :
-  push :
+# Workflow name
+on:
+  push:
     branches:
-      -dev
+      - dev
 
 jobs:
-run-shell-command:
-#job name
-runs-on: ubuntu-latest
-#Runner OS
-steps:
-#Array of steps (object): name, run bash command
-- name: echo a string
-run: echo "Starting"
-- name: multiline script
-run: |
-node -v
+  run-shell-command:
+    # Job name
+    runs-on: ubuntu-latest
+    # Runner OS
+    steps:
+      # Array of steps (object): name, run bash command
+      - name: echo a string
+        run: echo "Starting"
+
+      - name: multiline script
+        run: |
+          node -v
+
